@@ -14,6 +14,7 @@ export const register=async(req:Request,res:Response)=>{
 }
 export const login=async(req:Request,res:Response)=>{
     try{
+        console.log(req.body)
         const {email,password}=req.body
         const user:IUser=await loginUser(email,password)
         if(!req.session){
