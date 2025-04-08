@@ -1,0 +1,33 @@
+{
+  "name": "sessionmanagement",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "npm-run-all --parallel start:ts start:js",
+    "tsc": "tsc",
+    "start:ts": "tsc -w",
+    "start:js": "nodemon --watch dist dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/connect-mongo": "^3.1.2",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.1",
+    "@types/express-session": "^1.18.1",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "i": "^0.3.7",
+    "mongoose": "^8.13.0",
+    "npm": "^11.2.0",
+    "typescript": "^5.8.2"
+  }
+}
