@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(sessionMiddleware);
 app.use("/auth",authRoutes);
 app.listen(port,()=>{
+  console.log("Server Started")
   console.log(`Server running on port:${port}`);
 });
 //securepassword
